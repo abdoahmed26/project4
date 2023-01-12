@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/part20.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <div class="all">
+        <ul>
+            <li><a href="#" onclick="document.getElementById('menu').style.display='block'">menu</a></li>
+            <li><a href="#" onclick="document.getElementById('con').style.display='block'">contact</a></li>
+        </ul>
+        <h1>logo</h1>
+        <article>
+            <h2>monday - friday 10-23 | saturday 14-02</h2>
+            <h3>42 village St, New York</h3>
+            <p>powered by <span>Abdulrahman Ahmed</span></p>
+        </article>
+    </div>
+    <div class="menu" id="menu">
+        <article>
+            <h1>Starters
+                <a href="#menu" onclick="document.getElementById('menu').style.display='none'">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                </h1>
+            <ul>
+                <li>Tomato Soup <span>$2.50</span></li>
+                <li>Chicken Salad <span>$3.50</span></li>
+                <li>Bread and Butter <span>$1.00</span></li>
+            </ul>
+        </article>
+        <article>
+            <h1>Main Courses</h1>
+            <ul>
+                <li>Grilled Fish and Potatoes <span>$8.50</span></li>
+                <li>Italian Pizza <span>$5.50</span></li>
+                <li>Veggie Pasta <span>$4.00</span></li>
+                <li>Chicken and Potatoes <span>$6.50</span></li>
+                <li>Deluxe Burger <span>$5.00</span></li>
+            </ul>
+        </article>
+        <article>
+            <h1>Desserts</h1>
+            <ul>
+                <li>Fruit Salad <span>$2.50</span></li>
+                <li>Ice cream <span>$2.00</span></li>
+                <li>Chocolate Cake <span>$4.00</span></li>
+                <li>Cheese <span>$5.50</span></li>
+            </ul>
+        </article>
+    </div>
+    <div class="con" id="con">
+        <h1>Contact
+            <a href="#con" onclick="document.getElementById('con').style.display='none'">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+        </h1>
+        <article>
+            <p>Reserve a table, ask for today's special or just send us a message:</p>
+            <form action="">
+                <input type="text" name="name" placeholder="Name" required><br>
+                <input type="number" name="num" placeholder="How many people"> <br>
+                <input type="datetime" name="date" placeholder="Enter the date"> <br>
+                <input type="text" name="message" placeholder="Message / Special requirements"> <br>
+                <input type="submit" value="SEND MESSAGE" class="sub">
+            </form>
+        </article>
+    </div>
+</body>
+</html>

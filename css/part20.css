@@ -1,0 +1,188 @@
+:root {
+    --color1:black;
+    --color2 : white;
+    --hover-color:#ccc;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Raleway", sans-serif;
+}
+.all {
+    background-image: url("p5.img/onepage_restaurant.jpg");
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding:20px 20px 19px;
+    color: var(--color2);
+    font-weight: lighter;
+    position: fixed;
+    width: 100%;
+}
+.all ul {
+    list-style-type: none;
+}
+.all ul li {
+    padding: 10px;
+    background-color: var(--color1);
+    width: fit-content;
+    margin-bottom: 20px;
+}
+.all ul li:hover {
+    background-color: var(--hover-color);
+}
+.all ul li a {
+    text-decoration: none;
+    color: var(--color2);
+    font-size: 25px;
+}
+.all ul li:hover a {
+    color: var(--color1);
+}
+.all h1 {
+    margin: 130px 0px;
+    font-size: 65px;
+    font-weight: lighter;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.all article {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+}
+.all article h2,
+.all article h3 {
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+@media(max-width:461px){
+    .all article h2,
+    .all article h3 {
+        margin-bottom: 18px;
+    }
+}
+.all article p span {
+    color: var(--hover-color);
+}
+.menu,
+.con {
+    width: 60%;
+    overflow: auto;
+    z-index: 3;
+    background-color: var(--color2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-35%);
+    -webkit-transform: translate(-50%,-35%);
+    -moz-transform: translate(-50%,-35%);
+    -ms-transform: translate(-50%,-35%);
+    -o-transform: translate(-50%,-35%);
+    display: none;
+}
+.con {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+@media(max-width:600px){
+    .menu,
+    .con {
+        width: 90%;
+    }
+}
+@media(min-width:600px) and (max-width:1199px) {
+    .menu,
+    .con {
+        width: 80%;
+    }
+}
+.menu article h1,
+.con h1 {
+    background-color: var(--color1);
+    padding:15px 15px;
+    color: var(--color2);
+    font-weight: lighter;
+    font-size: 35px;
+    position: relative;
+}
+.menu article h1 a,
+.con h1 a {
+    color: var(--color2);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.menu article h1 a i,
+.con h1 a i{
+    padding: 10px 20px;
+}
+.menu article h1 a:hover i,
+.con h1 a:hover i{
+    color: #000;
+    background-color: #ccc;
+}
+.menu article ul {
+    list-style-type: none;
+    padding-bottom: 15px;
+    background-color: var(--color2);
+}
+.menu article ul li {
+    padding: 15px 15px 0px;
+    color: var(--color1);
+}
+.menu article ul li span {
+    font-weight: bold;
+}
+.con article {
+    padding: 15px;
+}
+.con article p {
+    margin-bottom: 15px;
+}
+.con article form {
+    width: 100%;
+}
+.con article input{
+    width: 100%;
+    margin-bottom: 15px;
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid var(--hover-color);
+}
+.con article input::placeholder {
+    font-size: 15px;
+}
+.con article input.sub {
+    width: fit-content;
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.con article input.sub:hover {
+    background-color: var(--hover-color);
+    color: var(--color1);
+}
