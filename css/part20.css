@@ -69,12 +69,6 @@ body {
     font-weight: lighter;
     margin-bottom: 30px;
 }
-@media(max-width:461px){
-    .all article h2,
-    .all article h3 {
-        margin-bottom: 18px;
-    }
-}
 .all article p span {
     color: var(--hover-color);
 }
