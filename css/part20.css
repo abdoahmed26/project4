@@ -46,10 +46,9 @@ body {
     color: var(--color1);
 }
 .all h1 {
-    margin: 130px 0px;
     font-size: 65px;
     font-weight: lighter;
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -60,9 +59,9 @@ body {
     -o-transform: translate(-50%,-50%);
 }
 .all article {
-    position: relative;
-    bottom: 0%;
-    left: 0%;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 .all article h2,
 .all article h3 {
